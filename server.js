@@ -8,10 +8,11 @@ const PORT = process.env.PORT || 3000; //access ENVIRONMENT VARIABLE handled by 
 
 //check if not http req, redirect to http - openWeatherMap (free plan) is http-only
 app.use(function (req, res, next){
-	if (req.headers['x-forwarded-proto'] === 'http'){
-		next();
-	} else {
+	if (req.headers['x-forwarded-proto'] === 'https'){ //only heroku will return req{}
 		res.redirect('http://' + req.hostname + req.url);
+
+	} else { //assuming else is only http - what if telnet?
+		next();
 	}
 });
 
