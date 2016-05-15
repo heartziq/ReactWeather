@@ -3,7 +3,11 @@ var React = require('react');
 //statement
 var About =  () => {
   return (
-    <h3>About compo</h3>
+    <div>
+          <h3>About</h3>
+          <p>Welcome to about page</p>
+    </div>
+
   );
 };
 
