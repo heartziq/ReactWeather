@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 3000; //access ENVIRONMENT VARIABLE handled by 
 
 //no port assigned, (means local: 3000)
 
-//check if not http req, redirect to http - openWeatherMap is http-only
+//check if not http req, redirect to http - openWeatherMap (free plan) is http-only
 app.use(function (req, res, next){
 	if (req.headers['x-forwarded-proto'] === 'http'){
 		next();
