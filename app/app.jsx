@@ -5,6 +5,10 @@ var Weather = require('Weather');
 var About = require('About');
 var Example = require('Example');
 
+// Load foundation-sites
+require('style!css!foundation-sites/dist/foundation.min.css');
+$(document).foundation();
+
 var {
   Route, Router, IndexRoute, hashHistory
 } = require('react-router');
