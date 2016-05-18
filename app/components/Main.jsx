@@ -7,8 +7,12 @@ var Main = (other) => {
   return (
     <div>
       <Nav />
-      <h2>Main component</h2>
-      {other.children}
+      <div className="row">
+        <div className="columns medium-6 large-4 small-centered">
+          {other.children}
+        </div>
+      </div>
+
     </div>
 
   );
