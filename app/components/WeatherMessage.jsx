@@ -12,7 +12,7 @@ var React = require('react');
 var WeatherMessage = ({temperature, country}) => {
   //var {temperature, country} = props;//es6 de-structuring
   return (
-    <p> It's {temperature} in {country}!</p>
+    <p className="text-center"> It's {temperature} in {country}!</p>
   );
 }
 module.exports = WeatherMessage;
