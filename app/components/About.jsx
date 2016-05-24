@@ -5,7 +5,7 @@ var React = require('react');
 var About =  () => {
   return (
     <div>
-          <h1 className="text-center">Mission</h1>
+          <h1 className="text-center page-title">Mission</h1>
           <h3>to deliver worldwide temperature instantly</h3>
           <table>
             <thead>

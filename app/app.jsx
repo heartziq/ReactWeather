@@ -17,6 +17,7 @@ var {
 //var Route = require('react-router').Route;
 //var Router = require('react-router').Router;
 
+require('style!css!applicationStyles');
 var obj = {
   name: 'me'
 }
